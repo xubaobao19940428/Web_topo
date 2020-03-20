@@ -1,0 +1,427 @@
+{
+    "title": "取证设备",
+    "icon": "receipt",
+    "opened": false,
+    "items": [
+        {
+            "text": "摄像头",
+            "icon": "statics/topo/evidence/camera.png",
+            "info": {
+                "type": "image",
+                "action": [],
+                "dataBind": {
+                    "sn": "",
+                    "title": "",
+                    "biz": "",
+                    "queryParam": {}
+                },
+                "style": {
+                    "position": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 42,
+                        "h": 42
+                    },
+                    "backColor": "transparent",
+                    "zIndex": 1,
+                    "url": "statics/topo/evidence/camera.png"
+                },
+                "wumoxing": {
+                    "identifier": "",
+                    "name": "",
+                    "max": "",
+                    "min": "",
+                    "unit": "",
+                    "value": ""
+                },
+                "handle": "",
+                "productId": ""
+            }
+        },
+        {
+            "text": "二次软件取证终端",
+            "icon": "statics/topo/evidence/ecrjqzzd.png",
+            "info": {
+                "type": "image",
+                "action": [],
+                "dataBind": {
+                    "sn": "",
+                    "title": "",
+                    "biz": "",
+                    "queryParam": {}
+                },
+                "style": {
+                    "position": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 42,
+                        "h": 42
+                    },
+                    "backColor": "transparent",
+                    "zIndex": 1,
+                    "url": "statics/topo/evidence/ecrjqzzd.png"
+                },
+                "wumoxing": {
+                    "identifier": "",
+                    "name": "",
+                    "max": "",
+                    "min": "",
+                    "unit": "",
+                    "value": ""
+                },
+                "handle": "",
+                "productId": ""
+            }
+        },
+        {
+            "text": "二次软件审核",
+            "icon": "statics/topo/evidence/ecrjqzzd1.png",
+            "info": {
+                "type": "image",
+                "action": [],
+                "dataBind": {
+                    "sn": "",
+                    "title": "",
+                    "biz": "",
+                    "queryParam": {}
+                },
+                "style": {
+                    "position": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 42,
+                        "h": 42
+                    },
+                    "backColor": "transparent",
+                    "zIndex": 1,
+                    "url": "statics/topo/evidence/ecrjqzzd1.png"
+                },
+                "wumoxing": {
+                    "identifier": "",
+                    "name": "",
+                    "max": "",
+                    "min": "",
+                    "unit": "",
+                    "value": ""
+                },
+                "handle": "",
+                "productId": ""
+            }
+        },
+        {
+            "text": "审核不通过",
+            "icon": "statics/topo/evidence/ecrjqzzd2.png",
+            "info": {
+                "type": "image",
+                "action": [],
+                "dataBind": {
+                    "sn": "",
+                    "title": "",
+                    "biz": "",
+                    "queryParam": {}
+                },
+                "style": {
+                    "position": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 42,
+                        "h": 42
+                    },
+                    "backColor": "transparent",
+                    "zIndex": 1,
+                    "url": "statics/topo/evidence/ecrjqzzd2.png"
+                },
+                "wumoxing": {
+                    "identifier": "",
+                    "name": "",
+                    "max": "",
+                    "min": "",
+                    "unit": "",
+                    "value": ""
+                },
+                "handle": "",
+                "productId": ""
+            }
+        },
+        {
+            "text": "审核通过",
+            "icon": "statics/topo/evidence/ecrjqzzd3.png",
+            "info": {
+                "type": "image",
+                "action": [],
+                "dataBind": {
+                    "sn": "",
+                    "title": "",
+                    "biz": "",
+                    "queryParam": {}
+                },
+                "style": {
+                    "position": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 42,
+                        "h": 42
+                    },
+                    "backColor": "transparent",
+                    "zIndex": 1,
+                    "url": "statics/topo/evidence/ecrjqzzd3.png"
+                },
+                "wumoxing": {
+                    "identifier": "",
+                    "name": "",
+                    "max": "",
+                    "min": "",
+                    "unit": "",
+                    "value": ""
+                },
+                "handle": "",
+                "productId": ""
+            }
+        },
+        {
+            "text": "平板",
+            "icon": "statics/topo/evidence/pingban.png",
+            "info": {
+                "type": "image",
+                "action": [],
+                "dataBind": {
+                    "sn": "",
+                    "title": "",
+                    "biz": "",
+                    "queryParam": {}
+                },
+                "style": {
+                    "position": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 42,
+                        "h": 42
+                    },
+                    "backColor": "transparent",
+                    "zIndex": 1,
+                    "url": "statics/topo/evidence/pingban.png"
+                },
+                "wumoxing": {
+                    "identifier": "",
+                    "name": "",
+                    "max": "",
+                    "min": "",
+                    "unit": "",
+                    "value": ""
+                },
+                "handle": "",
+                "productId": ""
+            }
+        },
+        {
+            "text": "录像",
+            "icon": "statics/topo/evidence/lx.png",
+            "info": {
+                "type": "image",
+                "action": [],
+                "dataBind": {
+                    "sn": "",
+                    "title": "",
+                    "biz": "",
+                    "queryParam": {}
+                },
+                "style": {
+                    "position": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 42,
+                        "h": 42
+                    },
+                    "backColor": "transparent",
+                    "zIndex": 1,
+                    "url": "statics/topo/evidence/lx.png"
+                },
+                "wumoxing": {
+                    "identifier": "",
+                    "name": "",
+                    "max": "",
+                    "min": "",
+                    "unit": "",
+                    "value": ""
+                },
+                "handle": "",
+                "productId": ""
+            }
+        },
+        {
+            "text": "在线",
+            "icon": "statics/topo/evidence/online.png",
+            "info": {
+                "type": "image",
+                "action": [],
+                "dataBind": {
+                    "sn": "",
+                    "title": "",
+                    "biz": "",
+                    "queryParam": {}
+                },
+                "style": {
+                    "position": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 42,
+                        "h": 42
+                    },
+                    "backColor": "transparent",
+                    "zIndex": 1,
+                    "url": "statics/topo/evidence/online.png"
+                },
+                "wumoxing": {
+                    "identifier": "",
+                    "name": "",
+                    "max": "",
+                    "min": "",
+                    "unit": "",
+                    "value": ""
+                },
+                "handle": "",
+                "productId": ""
+            }
+        },
+        {
+            "text": "离线",
+            "icon": "statics/topo/evidence/offline.png",
+            "info": {
+                "type": "image",
+                "action": [],
+                "dataBind": {
+                    "sn": "",
+                    "title": "",
+                    "biz": "",
+                    "queryParam": {}
+                },
+                "style": {
+                    "position": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 42,
+                        "h": 42
+                    },
+                    "backColor": "transparent",
+                    "zIndex": 1,
+                    "url": "statics/topo/evidence/offline.png"
+                },
+                "wumoxing": {
+                    "identifier": "",
+                    "name": "",
+                    "max": "",
+                    "min": "",
+                    "unit": "",
+                    "value": ""
+                },
+                "handle": "",
+                "productId": ""
+            }
+        },
+        {
+            "text": "上一页",
+            "icon": "statics/topo/evidence/shangyiye.png",
+            "info": {
+                "type": "image",
+                "action": [],
+                "dataBind": {
+                    "sn": "",
+                    "title": "",
+                    "biz": "",
+                    "queryParam": {}
+                },
+                "style": {
+                    "position": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 42,
+                        "h": 42
+                    },
+                    "backColor": "transparent",
+                    "zIndex": 1,
+                    "url": "statics/topo/evidence/shangyiye.png"
+                },
+                "wumoxing": {
+                    "identifier": "",
+                    "name": "",
+                    "max": "",
+                    "min": "",
+                    "unit": "",
+                    "value": ""
+                },
+                "handle": "",
+                "productId": ""
+            }
+        },
+        {
+            "text": "下一步",
+            "icon": "statics/topo/evidence/xiayiye.png",
+            "info": {
+                "type": "image",
+                "action": [],
+                "dataBind": {
+                    "sn": "",
+                    "title": "",
+                    "biz": "",
+                    "queryParam": {}
+                },
+                "style": {
+                    "position": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 42,
+                        "h": 42
+                    },
+                    "backColor": "transparent",
+                    "zIndex": 1,
+                    "url": "statics/topo/evidence/xiayiye.png"
+                },
+                "wumoxing": {
+                    "identifier": "",
+                    "name": "",
+                    "max": "",
+                    "min": "",
+                    "unit": "",
+                    "value": ""
+                },
+                "handle": "",
+                "productId": ""
+            }
+        },
+        {
+            "text": "示例图",
+            "icon": "statics/topo/evidence/all.gif",
+            "info": {
+                "type": "image",
+                "action": [],
+                "dataBind": {
+                    "sn": "",
+                    "title": "",
+                    "biz": "",
+                    "queryParam": {}
+                },
+                "style": {
+                    "position": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 42,
+                        "h": 42
+                    },
+                    "backColor": "transparent",
+                    "zIndex": 1,
+                    "url": "statics/topo/evidence/all.gif"
+                },
+                "wumoxing": {
+                    "identifier": "",
+                    "name": "",
+                    "max": "",
+                    "min": "",
+                    "unit": "",
+                    "value": ""
+                },
+                "handle": "",
+                "productId": ""
+            }
+        }
+    ]
+}

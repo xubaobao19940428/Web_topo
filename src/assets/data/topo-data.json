@@ -1,0 +1,13 @@
+{
+  "name": "图层",
+  "layer": {
+    "backColor": "#eee",
+    "backgroundImage": "",
+    "widthHeightRatio": "",
+    "width": 800,
+    "height": 600
+  },
+  "components": [
+    
+  ]
+}

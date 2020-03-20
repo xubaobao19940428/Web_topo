@@ -1,0 +1,7 @@
+<symbol id="PresetCapacitor_V" viewBox="-40 -40 81 81">
+			<line x1="0" y1="-15" x2="0" y2="-4" stroke-width="1"/>
+			<line x1="0" y1="4" x2="0" y2="15" stroke-width="1"/>
+			<line x1="-12" y1="-4" x2="12" y2="-4" stroke-width="1"/>
+			<line x1="-12" y1="4" x2="12" y2="4" stroke-width="1"/>
+			<path d="M-12 12 L12 -12 M14 -10 L10 -14" stroke-width="1" fill-opacity="0"/>
+</symbol>
