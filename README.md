@@ -1,9 +1,6 @@
 ## WEB组态
-基于vue+quasar的web组态，核心代码基于vue，quasar仅仅是为了方便构建  
-github预览访问如下地址：https://phynos.github.io/WebTopo/dist/spa
-
-## 更新日志
-[更新日志](CHANGELOG.md)
+基于vue+quasar的web组态，核心代码基于vue，quasar仅仅是为了方便构建
+(我是不太建议用quasar,这个框架看起来比较麻烦，组件的事件基本上没有示例，看着不是太清晰（个人观点）)
 
 ## 后续重点TODO
 - 完善撤销和恢复
@@ -143,7 +140,3 @@ quasar build
 ### Electron App
 quasar build -m electron
 
-
-
-## 运行截图
-![avatar](/doc/shot.png)
