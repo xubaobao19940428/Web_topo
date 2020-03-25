@@ -26,6 +26,7 @@ module.exports = {
     'ga': true, // Google Analytics
     'cordova': true,
     '__statics': true,
+    '__shapes': true,
     'process': true
   },
 

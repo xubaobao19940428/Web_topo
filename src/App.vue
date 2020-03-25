@@ -20,12 +20,12 @@ export default {
     }
   },
   mounted(){
-     Parse.initialize("shuwa", "webapi","HZlora2017");
+    //  Parse.initialize("shuwa", "webapi","HZlora2017");
     //  Parse.serverURL = "http://ci.iotn2n.com:5080/iotapi";
-    //  Parse.serverURL = "http://132.232.121.164:5080/iotapi";
-     Parse.serverURL = "/iotapi";
+    // //  Parse.serverURL = "http://132.232.121.164:5080/iotapi";
+    // //  Parse.serverURL = "/iotapi";
     //  this.login()
-    this.getDeviceDetail()
+    // this.getDeviceDetail()
   },
   methods:{
     login(){

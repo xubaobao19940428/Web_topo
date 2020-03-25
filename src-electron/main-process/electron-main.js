@@ -6,6 +6,7 @@ import { app, BrowserWindow } from 'electron'
  */
 if (process.env.PROD) {
   global.__statics = require('path').join(__dirname, 'statics').replace(/\\/g, '\\\\')
+  global.__shapes = require('path').join(__dirname, 'shapes').replace(/\\/g, '\\\\')
 }
 
 let mainWindow

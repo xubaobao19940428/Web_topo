@@ -612,46 +612,46 @@ export default {
                 }
             })
         },
-        addDeviceData(index){
-          var afterUrl =  window.location.search.substring(1);
-          var afterEqual = afterUrl.substring(afterUrl.indexOf('=')+1);
-          this.deviceid = afterEqual
-          this.$store.dispatch('getDeviceId',this.deviceid)
-          this.configData.deviceid = this.$store.state.getDevices.deviceId
-          var json = JSON.stringify(this.configData);
-          var Product = Parse.Object.extend('Product')
-          var product = new Product()
-          if(this.devicid!=''){
-              product.id = this.deviceid
-            product.set('config',this.configData)
-            product.save().then(resultes=>{
-                if(resultes){
-                    if(index==1){
-                        this.$q.notify({
-                            color: 'positive',
-                            position: 'top',
-                            message: '保存成功',
-                        })
-                    }
+        // addDeviceData(index){
+        //   var afterUrl =  window.location.search.substring(1);
+        //   var afterEqual = afterUrl.substring(afterUrl.indexOf('=')+1);
+        //   this.deviceid = afterEqual
+        //   this.$store.dispatch('getDeviceId',this.deviceid)
+        //   this.configData.deviceid = this.$store.state.getDevices.deviceId
+        //   var json = JSON.stringify(this.configData);
+        //   var Product = Parse.Object.extend('Product')
+        //   var product = new Product()
+        //   if(this.devicid!=''){
+        //       product.id = this.deviceid
+        //     product.set('config',this.configData)
+        //     product.save().then(resultes=>{
+        //         if(resultes){
+        //             if(index==1){
+        //                 this.$q.notify({
+        //                     color: 'positive',
+        //                     position: 'top',
+        //                     message: '保存成功',
+        //                 })
+        //             }
                         
-                }
-            },error=>{
-                this.$q.notify({
-                    color: 'purple',
-                    position: 'top',
-                    message: error.error,
-                }) 
-                window.clearInterval(this.timer)
-                this.timer = null
-            })
-          }
-        },
-        setTimer(){
-            this.timer = window.setInterval(() => {
-                this.addDeviceData(0);
-            }, 60000);
+        //         }
+        //     },error=>{
+        //         this.$q.notify({
+        //             color: 'purple',
+        //             position: 'top',
+        //             message: error.error,
+        //         }) 
+        //         window.clearInterval(this.timer)
+        //         this.timer = null
+        //     })
+        //   }
+        // },
+        // setTimer(){
+        //     this.timer = window.setInterval(() => {
+        //         this.addDeviceData(0);
+        //     }, 60000);
             
-            },
+        //     },
         printData(){
             this.configData.deviceid = this.$store.state.getDevices.deviceId
             var json = JSON.stringify(this.configData);
@@ -662,6 +662,7 @@ export default {
     },
     
     mounted() {
+        console.log(this.devicid)
         if(sessionStorage.getItem('configdata')){
         //     var obj={
         //         topoData:JSON.parse(sessionStorage.getItem('configdata')),
