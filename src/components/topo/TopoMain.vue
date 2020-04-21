@@ -77,7 +77,7 @@
             <q-btn label="当前数据" color="primary" size="xs" style="margin-left:10px;height:30px;margin-top:5px;" @click="printData" />
             <q-btn label="保 存" color="primary" size="xs" style="margin-left:10px;height:30px;margin-top:5px;" @click="addDeviceData(1)" />
         </div>
-        <div style="position:absolute;right: 10px;top: 0px;top:-40px" class="row">                            
+        <div style="position:absolute;right: 10px;top: 0px;" class="row">                            
             <div style="line-height:40px;height:40px;padding: 0px 5px;">
                 缩放
             </div>
@@ -679,12 +679,12 @@ export default {
         }else{
             this.loadDefaultTopoData()
         }
-    window.clearInterval(this.timer)
-    this.setTimer()
+    // window.clearInterval(this.timer)
+    // this.setTimer()
     },
      beforeDestroy(){
-      window.clearInterval(this.timer)
-      this.timer = null
+    //   window.clearInterval(this.timer)
+    //   this.timer = null
     
   }
 }

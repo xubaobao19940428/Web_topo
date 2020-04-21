@@ -254,7 +254,6 @@ export default {
     this.toolbox.push(kaiguan)
     this.toolbox.push(kanguananniu)
    this.toolbox.push(jsonOffice);
-    console.log(this.toolbox)
   }
 }
 </script>
