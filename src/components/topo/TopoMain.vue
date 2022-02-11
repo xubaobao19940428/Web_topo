@@ -142,7 +142,7 @@
               alt=""
               class="resize-rotate-center"
               @mousedown.stop="
-                selectComponentRotate($event, index, 'resize-rotate')
+                selectComponentRotate($event, index, component, 'resize-rotate')
               "
             />
           </div>
@@ -501,7 +501,8 @@ export default {
             this.selectComponentRotate(
               event,
               this.resizeItem,
-              this.resizeItem.index
+              this.resizeItem.index,
+              this.curControl
             );
             // this.curControl.style.position.x = this.resizeItem.x
             // this.curControl.style.position.y = this.resizeItem.y
@@ -757,12 +758,15 @@ export default {
       alert(json);
     },
     //翻转调整角度
-    selectComponentRotate(event, index) {
+    selectComponentRotate(event, index, component) {
       let e = event || window.event;
       window.event ? (window.event.cancelBubble = true) : e.stopPropagation();
       //阻止默认事件，以及事件冒泡
       let rotateCom = document.getElementsByClassName("topo-layer-view")[index];
       let rotate = document.getElementsByClassName("view-image")[index];
+      let imgRotateTag = document.getElementsByClassName(
+        "resize-rotate-center"
+      )[index];
       var pointA = {
         // 元素中心点 元素1/2自身宽高 + 元素的定位
         X:
@@ -770,7 +774,7 @@ export default {
             rotateCom.style.width.substring(0, rotateCom.style.width.length - 2)
           ) /
             2 +
-          e.offsetLeft,
+          e.pageX,
         Y:
           Number(
             rotateCom.style.height.substring(
@@ -779,7 +783,7 @@ export default {
             )
           ) /
             2 +
-          e.offsetTop
+          e.pageY
       };
       var pointB = {};
       var pointC = {}; // A,B,C分别代表中心点，起始点，结束点坐标
@@ -789,7 +793,7 @@ export default {
       var allA = 0; // 存放鼠标旋转总共的度数
       var count = 0;
       // 元素跟随鼠标移动旋转
-      e.onmousedown = function(e) {
+      imgRotateTag.onmousedown = function(e) {
         e.preventDefault();
         e.stopPropagation();
         typeMouse = true; //获取起始点坐标
@@ -797,6 +801,7 @@ export default {
 
         pointB.X = e.pageX;
         pointB.Y = e.pageY;
+        console.log(pointB.X, pointB.Y);
         // count++
         // }
         document.onmousemove = function(e) {
@@ -804,6 +809,7 @@ export default {
           if (typeMouse) {
             pointC.X = e.pageX;
             pointC.Y = e.pageY; // 获取结束点坐标
+            console.log(pointC.X, pointC.Y);
             // 计算出旋转角度
             var AB = {};
             var AC = {};
@@ -835,13 +841,17 @@ export default {
             } else {
               allA = angleA; //叉乘结果为正表示顺时针旋转，顺时针旋转加度数
             }
-            rotateCom.style.transform = "rotate(" + 100 + "deg)";
+            rotateCom.style.transform = "rotate(" + allA + "deg)";
+            component.style.transform = allA;
+            console.log(component);
           }
         };
       };
 
       document.onmouseup = function(e) {
         typeMouse = false;
+        document.onmousemove = null;
+        document.onmousedown = null;
       };
     }
   },
