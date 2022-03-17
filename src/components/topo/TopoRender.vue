@@ -38,15 +38,6 @@
         </span>
       </div>
     </template>
-    <div class="q-pa-lg flex flex-center">
-      <q-pagination
-        v-model="current"
-        :max="maxtotal"
-        :direction-links="true"
-        @input="setPagesize"
-      >
-      </q-pagination>
-    </div>
   </div>
 </template>
 
@@ -54,10 +45,10 @@
 import TopoBase from "./TopoBase";
 import axios from "axios";
 import topoUtil from "./util/topo-util";
-import Parse from "parse";
+
 import { getDev, uploadFile } from "@/api/login";
 import Cookies from "js-cookie";
-import { setInterval } from "timers";
+
 import {signData,signData1} from '@/api/upload'
 export default {
   name: "TopoRender",
@@ -367,41 +358,18 @@ export default {
       }
       
     },
-    setPagesize(val){
-      var Devices = Parse.Object.extend("Devices");
-      var devices = new Parse.Query(Devices);
-        devices.equalTo('brand',this.taskid)
-        devices.equalTo('basedata.index',val)
-        devices.find().then(resultes=>{
-          this.configData = resultes[0].attributes.basedata
-          this.productid=resultes[0].id
-        })
-    }
   },
   mounted() {
-    this.application = Cookies.get('application')
-    this.ispump = this.application.match('pump')
-    console.log(this.ispump)
+    
     this.nodeType = localStorage.getItem("nodeType");
     if (localStorage.getItem("topoData")) {
       var temp = localStorage.getItem("topoData");
       this.configData = JSON.parse(temp);
-    } else if (this.nodeType == 1&&this.ispump==-1) {
-      setTimeout(() => {
-        this.getparam();
-      }, 1000);
-    } else if (this.nodeType == 0&&this.ispump==-1) {
-      setTimeout(() => {
-        this.getparam();
-        this.setIntervalDetail();
-      }, 1000);
-    }else if(this.ispump!=-1){
-        this.getparam();
     }
   },
-  beforeDestroy() {
-    localStorage.removeItem("topoData");
-  }
+//   beforeDestroy() {
+//     localStorage.removeItem("topoData");
+//   }
 };
 </script>
 

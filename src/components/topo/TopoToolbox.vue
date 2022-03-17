@@ -26,20 +26,11 @@
                   <div class="toolbox-item-text">{{value.text}}</div>
                 </template>
             
-                <!-- <template v-else-if="value.isFontIcon === 1">
-                  <div class="item-icon">
-                    
-                  </div>
-                  <div class="toolbox-item-text">{{ value.text }}</div>
-                </template> -->
                  <template v-else-if="value.isFontIcon ===2">
                   <div class="item-icon">
-                    <!-- <svg-icon :icon-class="value.icon"/> -->
                     <embed :src="value.info.style.url" :width="20" :height="20" style="pointer-events: none;text-align:center"
                   type="image/svg+xml"
                   pluginspage="http://www.adobe.com/svg/viewer/install/" />
-                    
-                    <!-- <svg  version="1.1" xmlns="http://www.w3.org/2000/svg" :width="20" :height="20" style="pointer-events: none;" v-html="loadData(value,value.icon)"></svg> -->
                   </div>
                   <div class="toolbox-item-text">{{ value.text }}</div>
                 </template>

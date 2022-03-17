@@ -747,9 +747,9 @@ export default {
       localStorage.setItem("topoData", JSON.stringify(this.configData));
       this.$router.push({
         path: "/fullscreen",
-        query: {
-          deviceId: this.deviceid
-        }
+        // query: {
+        //   deviceId: this.deviceid
+        // }
       });
     },
     printData() {
@@ -843,7 +843,6 @@ export default {
             }
             rotateCom.style.transform = "rotate(" + allA + "deg)";
             component.style.transform = allA;
-            console.log(component);
           }
         };
       };
@@ -851,7 +850,7 @@ export default {
       document.onmouseup = function(e) {
         typeMouse = false;
         document.onmousemove = null;
-        document.onmousedown = null;
+        imgRotateTag.onmousedown = null;
       };
     }
   },
