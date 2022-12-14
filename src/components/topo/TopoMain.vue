@@ -145,6 +145,13 @@
                 selectComponentRotate($event, index, component, 'resize-rotate')
               "
             />
+            <img
+              src="../../assets/delete.png"
+              v-show="selectedComponentMap[component.identifier]"
+              alt=""
+              class="right_img"
+              @click.stop ="removeItem()"
+            />
           </div>
         </template>
         <div
@@ -220,9 +227,6 @@
 <script>
 import VueRulerTool from "./ruler";
 import TopoBase from "./TopoBase";
-
-import uid from "@/assets/libs/uid.js";
-
 import topoUtil from "./util/topo-util";
 import { deepCopy } from "@/assets/libs/utils";
 
@@ -393,6 +397,7 @@ export default {
     },
 
     controlMousedown(component, event, index) {
+      console.log(event.button);
       if (event.ctrlKey) {
         return;
       }
@@ -861,6 +866,10 @@ export default {
     } else {
       this.loadDefaultTopoData();
     }
+    //阻止右键菜单出来
+    document.addEventListener("contextmenu", function(e) {
+      e.preventDefault();
+    });
   },
   beforeDestroy() {}
 };
@@ -1030,9 +1039,23 @@ export default {
         margin: auto;
         transform: rotate(90deg);
       }
+      .right_img {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: -25px;
+        right: -10px;
+        margin: auto;
+        cursor: pointer;
+      }
     }
     .topo-layer-view-selected {
       outline: 1px solid #0cf;
+      position: relative;
+      .right_menu {
+        position: absolute;
+        right: 10px;
+      }
     }
   }
 }
