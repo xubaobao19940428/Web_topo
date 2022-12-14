@@ -746,7 +746,7 @@ export default {
       this.deviceid = afterEqual;
       localStorage.setItem("topoData", JSON.stringify(this.configData));
       this.$router.push({
-        path: "/fullscreen",
+        path: "/fullscreen"
         // query: {
         //   deviceId: this.deviceid
         // }
